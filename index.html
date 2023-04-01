@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic E-Commerce</title>
+    <!-- style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h3><i class="fa fa-shoe-prints"></i> SD Footwear</h3>
+
+        <a class="btn float-end cartbtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fa fa-cart-shopping"></i>
+            Cart
+          </a>
+    </div>
+
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <h4>Cart</h4>
+            <hr>
+            <ul id="cart"></ul>
+            <hr>
+            <h4 id="total"></h4>
+    </div>
+
+    <br><br>
+
+    <!-- cards -->
+    <div class="mainCont">
+        <div class="innerGrid">
+            <!-- world balance -->
+            <div class="title">
+                <h4 class="text-center">WORLD BALANCE</h4>
+            </div><br>
+            <div class="rowGrid">
+                <!-- WB 1 -->
+                <div class="cards crd1"  >
+                    <img src="Assets/Images/compact.jpg" alt="compact">
+                    <h5 class="text-center mt-2 ">Compact L</h5>
+                    <p><span class="price" data-price="1899">Price: 1,899</span></p>
+                    <p>
+                        Ratings  
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        5.0
+                    </p>
+                    <button class="btn mt-2 w-50 addCart">Add To Cart</button>
+                </div>
+                <!-- WB 2 -->
+                <div class="cards crd1">
+                    <img src="Assets/Images/kaia.jpg" alt="Kaia Neobasics">
+                    <h5 class="text-center mt-2 ">Kaia Neobasics</h5>
+                    <p><span class="price" data-price="2499">Price: 2,499</span></p>
+                    <p>
+                        Ratings  
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half "></i>
+                        4.5
+                    </p>
+                    <button class="btn mt-2 w-50 addCart">Add To Cart</button>
+                </div>
+                <!-- WB 3 -->
+                <div class="cards crd1">
+                    <img src="Assets/Images/sedna.jpg" alt="Sedna">
+                    <h5 class="text-center mt-2 ">Sedna Women Shoes</h5>
+                    <p><span class="price" data-price="1799">Price: 1,799</span></p>
+                    <p>
+                        Ratings  
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half "></i>
+                        4.5
+                    </p>
+                    <button class="btn mt-2 w-50 addCart">Add To Cart</button>
+                </div>
+                <!-- WB 4 -->
+                <div class="cards crd1">
+                    <img src="Assets/Images/futurist.jpg" alt="Futurist">
+                    <h5 class="text-center mt-2 ">Futurist</h5>
+                    <p><span class="price" data-price="2299">Price: 2,299</span></p>
+                    <p>
+                        Ratings  
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        5.0
+                    </p>
+                    <button class="btn mt-2 w-50 addCart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- Asics -->
+        <div class="innerGrid">
+            <div class="title">
+                <h4 class="text-center">ASICS</h4>
+            </div><br>
+            <div class="rowGrid">
+                <!-- asics 1 -->
+                <div class="cards crd2"  >
+                    <img src="Assets/Images/gel-rocket10.jpg" alt="Gel-Rocket-10">
+                    <h5 class="text-center mt-2 ">Gel Rocket 10</h5>
+                    <p><span class="price" data-price="4590">Price: 4,590</span></p>
+                    <p>
+                        Ratings  
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        5.0
+                    </p>
+                    <button class="btn mt-2 w-50 addCart">Add To Cart</button>
+                </div>
+                <!-- asics 2 -->
+                <div class="cards crd2">
+                    <img src="Assets/Images/gel-tactic.jpg" alt="Gel-Tactic">
+                    <h5 class="text-center mt-2 ">Gel-Tactic</h5>
+                    <p><span class="price" data-price="2680">Price: 2,680</span></p>
+                    <p>
+                        Ratings  
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half "></i>
+                        4.5
+                    </p>
+                    <button class="btn mt-2 w-50 addCart">Add To Cart</button>
+                </div>
+                <!-- asics 3 -->
+                <div class="cards crd2">
+                    <img src="Assets/Images/netburnerMT3.jpg" alt="Net Burner MT-3">
+                    <h5 class="text-center mt-2 ">Net Burner MT-3</h5>
+                    <p><span class="price" data-price="9300">Price: 9,300</span></p>
+                    <p>
+                        Ratings  
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star-half "></i>
+                        4.5
+                    </p>
+                    <button class="btn mt-2 w-50 addCart">Add To Cart</button>
+                </div>
+                <!-- asics 4 -->
+                <div class="cards crd2">
+                    <img src="Assets/Images/sky-eliteFF2.jpg" alt="sky-eliteFF2">
+                    <h5 class="text-center mt-2 ">Sky Elite FF-2</h5>
+                    <p><span class="price" data-price="3350">Price: 3,350</span></p>
+                    <p>
+                        Ratings  
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        <i class="fas fa-star "></i>
+                        5.0
+                    </p>
+                    <button class="btn mt-2 w-50 addCart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="innerGrid footer">
+            <p>	Copyright &#169; | Dizon Ejiph</p>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/main.js"></script>
+</body>
+</html>
